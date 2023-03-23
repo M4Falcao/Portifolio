@@ -1,18 +1,18 @@
 <div class="menu">
-  <a href="#" class="icon-main"></a>
-  <a href="#" class="icon-skills"></a>
-  <a href="#" class="icon-projects"></a>
-  <a href="#" class="icon-contact"></a>
+  <a href="#main" class="icon-main">M</a>
+  <a href="#skills" class="icon-skills"></a>
+  <a href="#projects" class="icon-projects"></a>
+  <a href="#contact" class="icon-contact"></a>
   <div class="divider"></div>
-  <a href="https://www.linkedin.com/in/mateus-falc%C3%A3o27/" class="icon-linkedin"></a>
-  <a href="https://github.com/M4Falcao" class="icon-github"></a>
-  <a href="https://mateusfal.itch.io/" class="icon-youtube"></a>
+  <a href="https://www.linkedin.com/in/mateus-falc%C3%A3o27/" class="icon-linkedin" target="_blank"></a>
+  <a href="https://github.com/M4Falcao" class="icon-github" target="_blank"></a>
+  <a href="https://mateusfal.itch.io/" class="icon-youtube" target="_blank"></a>
 </div>
 
 
 
 
-<section class="main">
+<section class="main" id="main">
   <div class="content">
     <div class="leftside">
       <h1>
@@ -20,7 +20,7 @@
         eu sou o <span>M</span>ateus, <br/>
         desenvolvedor .NET
       </h1>
-      <button class="btn-contact"> Entrar em contato</button>
+      <button class="btn-contact">Entrar em contato</button>
     </div>
     <div class="img">
 
@@ -28,8 +28,63 @@
   </div>
 </section>
 
-<section class="skills"></section>
+<section class="skills" id="skills">
+  <h1>Competências</h1>
 
-<section class="projects"></section>
+  <p>.NET</p>
+  <div class="loading one"></div>
 
-<section class="contact"></section>
+  <p>JavaScript</p>
+  <div class="loading two"></div>
+  
+  <p>HTML</p>
+  <div class="loading three"></div>
+  
+  <p>CSS</p>
+  <div class="loading four"></div>
+
+
+</section>
+
+<section class="projects" id="projects">
+  <h1>Portifólio e <br/> experiências</h1>
+
+  <div class="boxes">
+    <div class="box blue">
+      <a href="https://github.com/M4Falcao/Portifolio" target="_blank" rel="noopener noreferrer">Portifolio</a>
+    </div>
+    <div class="box red">
+      <a href="https://github.com/M4Falcao/Sistema-de-cadastro-de-contatos" target="_blank" rel="noopener noreferrer">Cadastro de <br/> contatos</a>
+    </div>
+    <div class="box blue">
+      <a href="https://github.com/M4Falcao/ChatBot" target="_blank" rel="noopener noreferrer">Chatbot <br/> com gpt3</a>
+    </div>
+  </div>
+  <div class="boxes">
+    <div class="box orange">
+      <a href="https://github.com/M4Falcao/SOLID" target="_blank" rel="noopener noreferrer">SOLID</a>
+    </div>
+    <div class="box green">
+      <a href="https://github.com/M4Falcao/DesignPattern" target="_blank" rel="noopener noreferrer">Design Patterns</a>
+    </div>
+    <div class="box orange">
+      <a href="https://github.com/M4Falcao/Portifolio" target="_blank" rel="noopener noreferrer">Portifolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h1>Entrar em <br/> contato</h1>
+
+  <div class="form">
+    <div class="row">
+      <input class="input" type="text" placeholder="Nome" [(ngModel)]="name">
+      <input class="input" type="text" placeholder="Email" [(ngModel)]="email">
+    </div>
+    <input class="input" type="text" placeholder="Assunto" [(ngModel)]="subject">
+    <textarea class="textarea" placeholder="Mensagem" [(ngModel)]="message"></textarea>
+    <button class="submit" type="submit" (click)="sendMessage()">Enviar</button>
+  </div>
+
+
+</section>
